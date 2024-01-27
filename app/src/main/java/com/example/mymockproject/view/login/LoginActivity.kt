@@ -93,6 +93,12 @@ class LoginActivity : AppCompatActivity() {
             launcherGg.launch(intent)
             DialogUtil.showLoadingDialog(this)
         }
+        binding.tvSkip.setOnClickListener {
+            Intent(this@LoginActivity, HomeActivity::class.java).also {
+                startActivity(it)
+            }
+            finish()
+        }
 
         binding.btnLogin.setOnClickListener {
             val email = binding.edtEmail.text.toString()
