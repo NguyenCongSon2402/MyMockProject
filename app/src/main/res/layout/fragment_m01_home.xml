@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.home.m01_home.M01HomeFragment">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập từ khóa muốn tìm kiếm"
+        android:layout_marginHorizontal="@dimen/size_24"
+        android:background="@drawable/bg_edt_normal"
+        android:paddingVertical="@dimen/size_10"
+        android:drawableStart="@drawable/ic_search"
+        android:paddingHorizontal="@dimen/size_13"
+        android:drawablePadding="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/changeView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        style="@style/TextSarabun500size14"/>
+    
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPageHotMovie"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_220"
+        app:layout_constraintTop_toBottomOf="@+id/edtSearch"
+        android:layout_marginHorizontal="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_16"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsSize="@dimen/size_8"
+        app:dotsColor="@color/gray_ed"
+        app:selectedDotColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/viewPageHotMovie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/size_4"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/changeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtSearch"
+        app:layout_constraintBottom_toBottomOf="@+id/edtSearch"
+        android:src="@drawable/ic_grid"
+        android:layout_marginEnd="@dimen/size_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/indicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_movie"
+        android:paddingHorizontal="@dimen/size_24"
+        android:paddingTop="@dimen/size_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/indicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_movie"
+        android:paddingHorizontal="@dimen/size_24"
+        android:paddingTop="@dimen/size_24"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

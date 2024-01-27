@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/m01HomeFragment"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_home"
+        />
+    <item android:id="@+id/m02FavouriteFragment"
+        android:title="Yêu thích"
+        android:icon="@drawable/ic_heart"
+       />
+    <item android:id="@+id/m03SettingFragment"
+        android:title="Cài đặt"
+        android:icon="@drawable/ic_setting"
+        />
+    <item android:id="@+id/m04ProfileAFragment"
+        android:title="Cá nhân"
+        android:icon="@drawable/ic_profile"/>
+</menu>

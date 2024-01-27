@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/m01HomeFragment">
+    <fragment
+        android:id="@+id/m01HomeFragment"
+        android:name="com.example.mymockproject.view.home.m01_home.M01HomeFragment"
+        android:label="fragment_m01_home"
+        tools:layout="@layout/fragment_m01_home" />
+    <fragment
+        android:id="@+id/m02FavouriteFragment"
+        android:name="com.example.mymockproject.view.home.m02_favourite.M02FavouriteFragment"
+        android:label="fragment_m02_favourite"
+        tools:layout="@layout/fragment_m02_favourite" />
+    <fragment
+        android:id="@+id/m03SettingFragment"
+        android:name="com.example.mymockproject.view.home.m03_setting.M03SettingFragment"
+        android:label="fragment_m03_setting"
+        tools:layout="@layout/fragment_m03_setting" />
+    <fragment
+        android:id="@+id/m04ProfileAFragment"
+        android:name="com.example.mymockproject.view.home.m04_profile.M04ProfileAFragment"
+        android:label="fragment_m04_profile_a"
+        tools:layout="@layout/fragment_m04_profile_a" />
+</navigation>

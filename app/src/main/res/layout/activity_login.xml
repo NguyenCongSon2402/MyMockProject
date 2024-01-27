@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.login.LoginActivity"
+    android:padding="@dimen/size_24">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Đăng nhập"
+        style="@style/TextBeauSansPro700Size20"
+        android:layout_marginTop="@dimen/size_60"
+        android:textColor="@color/color_title"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:text="Tài khoản"
+        android:layout_marginTop="@dimen/size_24"
+        style="@style/TextSarabun400size11"
+        android:textColor="@color/color_black_33"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        android:hint="Nhập Email"
+        style="@style/TextSarabun400size15"
+        android:background="@drawable/bg_edt_email"
+        android:backgroundTint="@color/gray_e5"
+        android:paddingHorizontal="@dimen/size_16"
+        android:paddingVertical="@dimen/size_14"
+        android:layout_marginTop="@dimen/size_8"
+        android:textColorHint="#ccc"
+        android:imeOptions="actionNext"
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        android:text="Mật khẩu"
+        android:layout_marginTop="@dimen/size_24"
+        style="@style/TextSarabun400size11"
+        android:textColor="@color/color_black_33"/>
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvPass"
+        android:hint="Nhập mật khẩu"
+        style="@style/TextSarabun400size15"
+        android:background="@drawable/bg_edt_email"
+        android:backgroundTint="@color/gray_e5"
+        android:paddingHorizontal="@dimen/size_16"
+        android:paddingVertical="@dimen/size_14"
+        android:layout_marginTop="@dimen/size_8"
+        android:textColorHint="#ccc"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/showPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_not_show_pass"
+        app:layout_constraintEnd_toEndOf="@+id/edtPass"
+        app:layout_constraintTop_toTopOf="@+id/edtPass"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPass"
+        android:padding="@dimen/size_16"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu"
+        style="@style/TextSarabun500size12"
+        android:textColor="@color/text_fotgot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPass"
+        android:layout_marginTop="@dimen/size_20"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPass"
+        android:background="@drawable/bg_btn_login"
+        android:backgroundTint= "@color/red_primary"
+        android:layout_marginTop="@dimen/size_20"
+        android:text="Đăng nhập"
+        style="@style/TextSarabun700size15"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        android:background="@color/gray_eb"
+        android:layout_marginTop="@dimen/size_20"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoặc"
+        style="@style/TextSarabun400size12"
+        android:textColor="@color/color_title"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size_20"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnLoginFb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_login_fb"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginStart="@dimen/size_24"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnLoginGg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/btnLoginFb"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr"
+        app:layout_constraintEnd_toStartOf="@+id/btnLoginTiktok"
+        android:src="@drawable/ic_login_gg"
+        android:layout_marginTop="@dimen/size_20"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnLoginTiktok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr"
+        android:src="@drawable/ic_login_tiktok"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginEnd="@dimen/size_24"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginGg"
+        android:layout_marginTop="@dimen/size_48">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNotHasAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa có tài khoản?"
+            style="@style/TextSarabun400size12"
+            android:textColor="@color/color_black_1a"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:layout_marginStart="@dimen/size_8"
+            style="@style/TextSarabun500size12"
+            android:textColor="@color/text_fotgot" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TabTextTitle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="fontFamily">@font/sarabun_400</item>
+    </style>
+    <!--text style-->
+    <style name="TextBeauSansPro700Size20">
+        <item name="android:textSize">@dimen/font_20</item>
+        <item name="fontFamily">@font/beau_sans_pro_700</item>
+    </style>
+
+    <style name="TextSarabun400size11">
+        <item name="android:textSize">@dimen/font_11</item>
+        <item name="fontFamily">@font/sarabun_400</item>
+    </style>
+
+    <style name="TextSarabun400size12">
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="fontFamily">@font/sarabun_400</item>
+    </style>
+
+    <style name="TextSarabun400size15">
+        <item name="android:textSize">@dimen/font_15</item>
+        <item name="fontFamily">@font/sarabun_400</item>
+    </style>
+
+    <style name="TextSarabun700size15">
+        <item name="android:textSize">@dimen/font_15</item>
+        <item name="fontFamily">@font/sarabun_700</item>
+    </style>
+
+    <style name="TextSarabun500size12">
+        <item name="android:textSize">@dimen/font_12</item>
+        <item name="fontFamily">@font/sarabun_500</item>
+    </style>
+
+    <style name="TextSarabun500size14">
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:fontFamily">@font/sarabun_500</item>
+        <item name="android:textColorHint">#4D222222</item>
+    </style>
+
+    <style name="TextSarabun500size16">
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="fontFamily">@font/sarabun_500</item>
+    </style>
+
+    <style name="TextSarabun600size14">
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="fontFamily">@font/sarabun_600</item>
+    </style>
+
+    <style name="TextSarabun600size16">
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="fontFamily">@font/sarabun_600</item>
+    </style>
+</resources>

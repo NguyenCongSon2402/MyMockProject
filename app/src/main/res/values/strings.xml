@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Mock Project</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--movie-->
+    <string name="add_favourite">Thêm vào Yêu thích thành công</string>
+    <string name="delete_favourite">Xóa khỏi Yêu thích thành công</string>
+    <string name="cast_and_crew">Cast &amp; Crew</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

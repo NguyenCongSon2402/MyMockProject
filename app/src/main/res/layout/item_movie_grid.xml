@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/size_4">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/itemCardView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_320"
+            app:cardCornerRadius="@dimen/size_8"
+            app:cardElevation="0dp"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/itemThumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:background= "@color/black"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Movie"
+            style="@style/TextSarabun600size14"
+            android:gravity="center"
+            android:textColor="@color/color_title"
+            app:layout_constraintTop_toBottomOf="@+id/itemCardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
